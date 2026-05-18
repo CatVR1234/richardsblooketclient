@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
+
   if(document.getElementById("richard-client")) return;
 
   let root=document.createElement("div");
@@ -92,4 +93,4 @@ document.addEventListener("DOMContentLoaded", function(){
     header.releasePointerCapture(e.pointerId);
   });
 
-})();
+});
