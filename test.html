@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Richard Client Test Page</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff3b3b;
+    }
+    button {
+      background: #ff3b3b;
+      border: none;
+      padding: 10px 15px;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Richard Client Test Page</h1>
+  <p>This page is CSP‑free. Your client will load perfectly here.</p>
+
+  <button id="loadClient">Load Richard Client</button>
+
+  <script>
+    document.getElementById("loadClient").onclick = function () {
+      let s = document.createElement("script");
+      s.src = "https://raw.githubusercontent.com/CatVR1234/richardsblooketclient/main/richard.js";
+      document.body.appendChild(s);
+    };
+  </script>
+
+</body>
+</html>
